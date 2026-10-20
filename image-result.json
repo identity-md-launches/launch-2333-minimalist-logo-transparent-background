@@ -1,0 +1,14 @@
+{
+  "output": "artifacts/image.png",
+  "dimensions": {
+    "width": 512,
+    "height": 700
+  },
+  "format": "image/png",
+  "colorMode": "RGBA",
+  "transparentPixels": 319289,
+  "visualReview": "Hook, straight string, dangling gold medallion and engraved lowercase sigma are visible.",
+  "unmetVisualRequirements": [
+    "Metallic shading is dimensional and textured rather than strictly flat."
+  ]
+}
