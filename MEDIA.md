@@ -1,11 +1,11 @@
 # Media
 
-> A minimalist logo on a transparent background. A silver metallic coat hook (like a wooden coat hook, curving down and to the left, but just the hook not the hook stand) at the top. A thin silver string hangs straight down from the hook's tip. At the bottom of the string, a gold metallic ring (like a
+> Animate the attached SigmaHook logo created in this job (silver metallic coat hook at top, thin silver string hanging down, gold metallic ring with σ at bottom) as a smooth pendulum swing.
 
-Pinned to IPFS as `bafybeieyihvej55aeofwtm6kdpl3rs6hgw3pwgcbcjfuxvhmzu2cx6sayy` — https://ipfs.imd.fun/ipfs/bafybeieyihvej55aeofwtm6kdpl3rs6hgw3pwgcbcjfuxvhmzu2cx6sayy/
+Pinned to IPFS as `bafybeicti74lver27ji6yi4zak52wbvm4sm5bwnrrzwzc47ldp2f4uzr2q` — https://ipfs.imd.fun/ipfs/bafybeicti74lver27ji6yi4zak52wbvm4sm5bwnrrzwzc47ldp2f4uzr2q/
 
 | file | type | bytes | sha-256 |
 | --- | --- | --- | --- |
-| [artifacts/image.png](artifacts/image.png) | image/png | 138,807 | `5c7483e9fdcd4c451e92294cb589d1c49cf01c574667037142808ba2b02847b3` |
+| [artifacts/image-v2.png](artifacts/image-v2.png) | image/png | 24,678,904 | `6a1982219bd47c5447fd95864717587a2c249a190950bd25db1fa24aaf01c266` |
 
 Each file is the exact bytes the network accepted; its SHA-256 is the hash it was accepted under.
