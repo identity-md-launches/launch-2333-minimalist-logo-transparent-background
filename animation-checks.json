@@ -1,0 +1,26 @@
+{
+  "motion": {
+    "monotonicBetweenExtrema": true,
+    "angleVelocityAccelerationContinuous": true
+  },
+  "artifacts/image-v2.png": {
+    "frames": 240,
+    "fps": 60,
+    "width": 512,
+    "height": 700,
+    "alpha": true,
+    "firstLastIdentical": true,
+    "stationaryHolds": true,
+    "unclipped": true
+  },
+  "media/sigmahook-pendulum.webm": {
+    "frames": 240,
+    "fps": 60,
+    "width": 512,
+    "height": 700,
+    "alpha": true,
+    "firstLastIdentical": true,
+    "stationaryHolds": true,
+    "unclipped": true
+  }
+}

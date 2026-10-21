@@ -1,14 +1,72 @@
 {
-  "output": "artifacts/image.png",
+  "output": "artifacts/image-v2.png",
+  "format": "image/png",
   "dimensions": {
     "width": 512,
     "height": 700
   },
-  "format": "image/png",
   "colorMode": "RGBA",
-  "transparentPixels": 319289,
-  "visualReview": "Hook, straight string, dangling gold medallion and engraved lowercase sigma are visible.",
-  "unmetVisualRequirements": [
-    "Metallic shading is dimensional and textured rather than strictly flat."
-  ]
+  "animation": {
+    "output": "media/sigmahook-pendulum.webm",
+    "format": "video/webm; codecs=vp9",
+    "alpha": true,
+    "width": 512,
+    "height": 700,
+    "fps": 60,
+    "frames": 240,
+    "durationSeconds": 4,
+    "losslessRgbaMaster": "artifacts/image-v2.png",
+    "pivotPixels": [
+      211,
+      181
+    ],
+    "extremaDegreesRightPositive": [
+      [
+        0.5,
+        0
+      ],
+      [
+        0.75,
+        8
+      ],
+      [
+        1.25,
+        -8
+      ],
+      [
+        1.75,
+        5
+      ],
+      [
+        2.25,
+        -5
+      ],
+      [
+        2.75,
+        2
+      ],
+      [
+        3.25,
+        -2
+      ],
+      [
+        3.5,
+        0
+      ]
+    ],
+    "startHoldSeconds": 0.5,
+    "endHoldSeconds": 0.5
+  },
+  "sourceSha256": "5c7483e9fdcd4c451e92294cb589d1c49cf01c574667037142808ba2b02847b3",
+  "unmetVisualRequirements": [],
+  "limitations": [
+    "The named PNG is APNG; PNG viewers without animation support show its first frame.",
+    "VP9 uses 4:2:0 chroma; APNG preserves full RGBA color.",
+    "WebM alpha requires browser support; preview offers APNG fallback.",
+    "Motion is a C2 continuous damped pendulum approximation with a smooth release and settling, not a physical simulation."
+  ],
+  "animated": true,
+  "frames": 240,
+  "fps": 60,
+  "durationSeconds": 4
 }

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SigmaHook pendulum review</title>
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; padding: 24px; background: #0a0c10; color: #eee; font: 16px system-ui, sans-serif; text-align: center; }
+h1 { font-size: 24px; font-weight: 500; }
+.stage { width: min(512px, 100%); margin: 20px auto; background: #0a0c10; }
+.stage.checker { background-color: #30343b; background-image: conic-gradient(#474b52 25%, transparent 0 50%, #474b52 0 75%, transparent 0); background-size: 24px 24px; }
+video, img { display: block; width: 100%; height: auto; }
+[hidden] { display: none; }
+button, a { color: #eee; }
+button { padding: 9px 14px; border: 1px solid #777; border-radius: 6px; background: #20242b; cursor: pointer; margin: 4px; }
+p { max-width: 620px; margin: 16px auto; line-height: 1.5; }
+</style>
+<h1>SigmaHook pendulum</h1>
+<p>512 × 700 · 60 fps · 4 seconds · transparent</p>
+<div class="stage checker" id="stage">
+<video id="video" width="512" height="700" controls loop playsinline preload="auto" poster="media/sigmahook-source.png"><source src="media/sigmahook-pendulum.webm" type="video/webm"></video>
+<img id="master" src="artifacts/image-v2.png" width="512" height="700" alt="SigmaHook swinging gently from side to side" hidden>
+</div>
+<button id="replay">Replay from rest</button>
+<button id="background">Switch to black background</button>
+<button id="format">Show APNG master</button>
+<p>Review: play once and check the hook-tip pivot, decreasing swings, smooth turns, still start and finish, and transparent edges. Use the APNG master if your browser does not display WebM transparency.</p>
+<p><a href="media/sigmahook-pendulum.webm" download>Download WebM</a> · <a href="artifacts/image-v2.png" download>Download APNG</a></p>
+<script>
+const video = document.getElementById('video');
+const master = document.getElementById('master');
+document.getElementById('replay').onclick = () => {
+  if (video.hidden) { const src = master.src; master.src = ''; master.src = src; }
+  else { video.currentTime = 0; video.play(); }
+};
+document.getElementById('background').onclick = event => {
+  const checker = document.getElementById('stage').classList.toggle('checker');
+  event.target.textContent = checker ? 'Switch to black background' : 'Switch to checkerboard';
+};
+document.getElementById('format').onclick = event => {
+  video.pause(); video.hidden = !video.hidden; master.hidden = !video.hidden;
+  event.target.textContent = video.hidden ? 'Show WebM' : 'Show APNG master';
+};
+</script>
+</html>
